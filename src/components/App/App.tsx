@@ -22,8 +22,8 @@ const [votes, setVotes] = useState<Votes>({
     setVotes({ good: 0, neutral: 0, bad: 0 });
   };
 
-  let totalVotes = votes.good + votes.neutral + votes.bad;
-  let positiveRate = totalVotes
+  const totalVotes = votes.good + votes.neutral + votes.bad;
+  const positiveRate = totalVotes
   ? Math.round((votes.good / totalVotes) * 100)
   : 0;
  
